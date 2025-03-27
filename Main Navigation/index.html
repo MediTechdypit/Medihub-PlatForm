@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>MediHub</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+    <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+            overflow: visible !important;
+            height: auto !important;
+        }        
+        
+        #mapFrame {
+            width: 100vw;
+            height: 100vh;
+            border: none;
+        }
+        
+    </style>
+</head>
+<body class="bg-light">
+    <header class="bg-white shadow-sm py-3">
+        <div class="container d-flex justify-content-between align-items-center">
+            <div>
+                <span class="fs-3 fw-bold text-warning">M</span><span class="fs-4 fw-semibold">ediHub</span>
+            </div>
+            <nav>
+                <a class="text-dark mx-2 text-decoration-none" href="\">Home</a>
+                <a class="text-dark mx-2 text-decoration-none" href="#">About</a>
+                <a class="text-dark mx-2 text-decoration-none" href="https://medihub-ver1.vercel.app/" target="_blank">Telemedicine</a>
+                <a class="text-dark mx-2 text-decoration-none" href="https://chatbot-f.vercel.app/" target="_blank">Chatbot</a>
+                <a class="text-dark mx-2 text-decoration-none" href="\BMI calculator\index.html" target="_blank">BMI Buddy</a>
+                <a class="text-dark mx-2 text-decoration-none" href="#" onclick="scrollToHospitals()">NearBy hospitals</a>
+            </nav>
+        </div>
+    </header>
+    <main class="container py-5 d-md-flex align-items-center">
+        <div class="col-md-6">
+            <h1 class="fw-bold text-dark">Your Health, Our Priority</h1>
+            <p class="text-secondary">Experience healthcare reimagined with AI-powered solutions and telemedicine services.</p>
+            <button class="btn btn-dark mt-3" onclick="window.open('https://medihub-ver1.vercel.app/', '_blank')">Start Consultation</button>
+        </div>
+        <div class="col-md-6 mt-4 mt-md-0">
+            <img src="/images/image.png" class="img-fluid rounded shadow" alt="Person having a telemedicine consultation on a laptop">
+        </div>
+    </main>
+    <div class="container py-4">
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="card p-3">
+                    <div class="mb-3"><i class="fas fa-info-circle fs-2 text-dark"></i></div>
+                    <h2 class="fs-5 fw-semibold">About Us</h2>
+                    <p class="text-secondary">Revolutionizing healthcare access through technology and innovation.</p>
+                    <button class="btn btn-dark">Learn More</button>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card p-3">
+                    <div class="mb-3"><i class="fas fa-video fs-2 text-dark"></i></div>
+                    <h2 class="fs-5 fw-semibold">Telemedicine</h2>
+                    <p class="text-secondary">Connect with healthcare professionals from the comfort of your home.</p>
+                    <button class="btn btn-dark" onclick="window.open('https://medihub-ver1.vercel.app/', '_blank')">Book Now</button>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card p-3">
+                    <div class="mb-3"><i class="fas fa-robot fs-2 text-dark"></i></div>
+                    <h2 class="fs-5 fw-semibold">AI Chatbot</h2>
+                    <p class="text-secondary">Get instant answers to your health queries with our AI assistant.</p>
+                    <button class="btn btn-dark" onclick="window.open('https://chatbot-f.vercel.app/', '_blank')">Chat Now</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Map Integration Section -->
+<!-- Full-Width Map Integration -->
+<iframe id="mapFrame" src="/Map Intigration/frontend/index.html" 
+        style="width: 100%; height: 100vh; border: none;"
+        sandbox="allow-scripts allow-same-origin allow-popups allow-top-navigation allow-top-navigation-by-user-activation">
+</iframe>
+
+
+    <footer class="bg-dark text-white py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-white text-decoration-none">Home</a></li>
+                        <li><a href="#" class="text-white text-decoration-none">About</a></li>
+                        <li><a class="text-white text-decoration-none" href="https://medihub-ver1.vercel.app/" target="_blank">Telemedicine</a></li>
+                        <li><a class="text-white text-decoration-none" href="https://chatbot-f.vercel.app/" target="_blank">Chatbot</a></li>
+                        <li><a class="text-white text-decoration-none"href="\BMI calculator\index.html" target="_blank">BMI Buddy</a></li>
+                        <li><a class="text-white text-decoration-none" onclick="scrollToHospitals()">NearBy Hospital</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h5>Connect With Us</h5>
+                    <div>
+                        <a href="#" class="text-white me-2"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-white me-2"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-white me-2"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="text-white me-2"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <h5>Contact</h5>
+                    <ul class="list-unstyled">
+                        <li><i class="fas fa-envelope me-2"></i> contact :-medihub661@gmail.com</li>
+                        <li><i class="fas fa-phone me-2"></i> +91 12345 67891</li>
+                        <li><i class="fas fa-map-marker-alt me-2"></i> 123 Health Street, Medical District</li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h5>Legal</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-white text-decoration-none">Privacy Policy</a></li>
+                        <li><a href="#" class="text-white text-decoration-none">Terms of Service</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="text-center mt-3">
+                <p>© 2025 MediHub. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        function adjustIframeHeight() {
+            var iframe = document.getElementById("mapFrame");
+    
+            function updateHeight() {
+                try {
+                    var body = iframe.contentWindow.document.body;
+                    var html = iframe.contentWindow.document.documentElement;
+    
+                    var height = Math.max(
+                        body.scrollHeight, body.offsetHeight,
+                        html.clientHeight, html.scrollHeight, html.offsetHeight
+                    );
+    
+                    iframe.style.height = height + "px";
+                } catch (error) {
+                    console.error("Error adjusting iframe height:", error);
+                }
+            }
+    
+            iframe.onload = function() {
+                setTimeout(updateHeight, 500); // Adjust after loading
+            };
+    
+            // Check for dynamic height changes
+            setInterval(updateHeight, 1000);
+        }
+    
+        adjustIframeHeight();
+
+        function scrollToHospitals() {
+            var hospitalDiv = document.getElementById("mapFrame");
+            if (hospitalDiv) {
+                window.scrollTo({
+                    top: hospitalDiv.offsetTop - 70, // Adjust for navbar height
+                    behavior: "smooth"
+                });
+            }
+        }
+    
+    </script>  
+</body>
+</html>
