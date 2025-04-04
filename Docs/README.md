@@ -85,6 +85,9 @@ To tackle these challenges, we have developed a robust AI-powered telemedicine p
 
 ---
 
+![Screenshot 2025-04-04 151054](https://github.com/user-attachments/assets/0023861c-7246-4868-8d31-4ef070a4cb7e)
+
+
 ### **B. Chatbot Process Flow**
 
 #### **1. User Input Handling**
