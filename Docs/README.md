@@ -92,8 +92,13 @@ To tackle these challenges, we have developed a robust AI-powered telemedicine p
 
 #### **1. User Input Handling**
 - The chatbot accepts:
-  - **Text/Emoji Inputs:** Users can type messages or use emojis to express emotions.
-  - **Voice/Video Inputs:** AI extracts key terms and converts voice into text for analysis.
+  - **Text Input: Type a message in the text box.![Screenshot 2025-04-03 225957](https://github.com/user-attachments/assets/f5153e10-ca17-414a-a5de-fba298a2ab61)
+
+  - **Emoji Input: Select an emoji from the emoji picker.![Screenshot 2025-04-03 231545](https://github.com/user-attachments/assets/2c84e88a-dca1-488e-95a4-f2698750b6d4)
+
+  - **Voice Input: Click on the microphone icon to speak.
+  - ![Screenshot 2025-04-03 231552](https://github.com/user-attachments/assets/39d2b555-f9cd-4e35-8216-3e48d7b770d9)
+
 
 #### **2. AI Analysis & Fine-Tuning**
 - AI processes the input using Natural Language Processing (NLP).
