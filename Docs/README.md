@@ -101,6 +101,9 @@ To tackle these challenges, we have developed a robust AI-powered telemedicine p
   - Mental health advice and coping mechanisms.
   - Recommendations for professional consultation if necessary.
   - AI-driven empathetic conversations for emotional support.
+ 
+  - ![image](https://github.com/user-attachments/assets/540cf783-d34f-480e-b712-dab6cfbd1aff)
+
 
 ---
 
