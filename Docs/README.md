@@ -92,27 +92,38 @@ To tackle these challenges, we have developed a robust AI-powered telemedicine p
 
 #### **1. User Input Handling**
 - The chatbot accepts:
-  - **Text Input: Type a message in the text box.![Screenshot 2025-04-03 225957](https://github.com/user-attachments/assets/f5153e10-ca17-414a-a5de-fba298a2ab61)
-
-  - **Emoji Input: Select an emoji from the emoji picker.![Screenshot 2025-04-03 231545](https://github.com/user-attachments/assets/2c84e88a-dca1-488e-95a4-f2698750b6d4)
-
+  - **Text Input: Type a message in the text box.
+  - **Emoji Input: Select an emoji from the emoji picker.
   - **Voice Input: Click on the microphone icon to speak.
-  - ![Screenshot 2025-04-03 231552](https://github.com/user-attachments/assets/39d2b555-f9cd-4e35-8216-3e48d7b770d9)
 
-
+ 
 #### **2. AI Analysis & Fine-Tuning**
 - AI processes the input using Natural Language Processing (NLP).
 - Fine-tunes the response based on the context of the conversation.
+
+![Screenshot 2025-04-05 100542 - Copy](https://github.com/user-attachments/assets/48cf7d63-6e86-4127-9967-0364fe79e924)
 
 #### **3. Output & Response Generation**
 - The chatbot provides a response based on the condition:
   - Mental health advice and coping mechanisms.
   - Recommendations for professional consultation if necessary.
   - AI-driven empathetic conversations for emotional support.
- 
-  - ![image](https://github.com/user-attachments/assets/540cf783-d34f-480e-b712-dab6cfbd1aff)
+   for more detail visit: **[Chatbot](../Chatbot/README.md)**
 
+### **C. Find Nearby Hospitals Process Flow**
 
+#### **1. Accessing the Location of Nearby Hospitals:**
+- :
+  - Users can choose "Use My Location" to enable or allow to access  location .
+  - Once granted, the app fetches the latitude and longitude to search for nearby hospitals within a specified radius.
+  - Hospital data is retrieved and displayed on an interactive map with markers indicating.
+
+![Screenshot 2025-04-04 152833](https://github.com/user-attachments/assets/5c8881d3-0dcb-4870-a5a1-7a03d82d5d24)
+
+#### **3. Output & Response Generation**
+- It provides Hospital locations marked with pins.
+- Users can click on a hospital marker to get further details and step-by-step directions via Google Maps.
+for more detail visit:**[Navigation](../Navigation/README.md)**
 ---
 
 ## **Conclusion**
