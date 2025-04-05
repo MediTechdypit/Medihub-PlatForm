@@ -84,6 +84,8 @@ To tackle these challenges, we have developed a robust AI-powered telemedicine p
 - AI assists doctors in quick prescription generation.
 
 ---
+![Screenshot 2025-04-04 151054](https://github.com/user-attachments/assets/0023861c-7246-4868-8d31-4ef070a4cb7e)
+
 
 ![Screenshot 2025-04-04 151054](https://github.com/user-attachments/assets/0023861c-7246-4868-8d31-4ef070a4cb7e)
 
@@ -109,6 +111,7 @@ To tackle these challenges, we have developed a robust AI-powered telemedicine p
   - Recommendations for professional consultation if necessary.
   - AI-driven empathetic conversations for emotional support.
    for more detail visit: **[Chatbot](../Chatbot/README.md)**
+<<<<<<< HEAD
 
 ### **C. Find Nearby Hospitals Process Flow**
 
@@ -125,7 +128,24 @@ To tackle these challenges, we have developed a robust AI-powered telemedicine p
 - Users can click on a hospital marker to get further details and step-by-step directions via Google Maps.
 for more detail visit:**[Navigation](../Navigation/README.md)**
 ---
+=======
+### **C. Find Nearby Hospitals Process Flow**
+
+#### **1. Accessing the Location of Nearby Hospitals:**
+- :
+  - Users can choose "Use My Location" to enable or allow to access  location .
+  - Once granted, the app fetches the latitude and longitude to search for nearby hospitals within a specified radius.
+  - Hospital data is retrieved and displayed on an interactive map with markers indicating.
+
+![Screenshot 2025-04-04 152833](https://github.com/user-attachments/assets/5c8881d3-0dcb-4870-a5a1-7a03d82d5d24)
+
+#### **3. Output & Response Generation**
+- It provides Hospital locations marked with pins.
+- Users can click on a hospital marker to get further details and step-by-step directions via Google Maps.
+for more detail visit:**[Navigation](../Navigation/README.md)**
+
+
+>>>>>>> 20ce2a4 (server update)
 
 ## **Conclusion**
 Our telemedicine platform revolutionizes digital healthcare by integrating AI-driven features that enhance accessibility, efficiency, and diagnostic accuracy. The AI-powered doctor assistant, mental health chatbot, and emergency support system create a seamless experience for both patients and doctors. This project aims to bridge the healthcare gap by providing a technology-driven, patient-centric solution for better medical services.
-
