@@ -71,6 +71,52 @@
 </head>
 
 <body class="bg-light">
+  <header class="bg-white shadow-sm py-3">
+    <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <!-- Logo -->
+            <a class="navbar-brand fw-bold notranslate" href="#">
+                <span class="fs-3 text-warning">M</span><span class="fs-4">ediHub</span>
+            </a>
+
+            <!-- Navbar Toggle Button (☰ / ✖) -->
+            <button class="navbar-toggler border-0" id="navbar-toggler" type="button" aria-expanded="false">
+                <i class="fas fa-bars fs-3" id="menu-icon"></i>
+            </button>
+
+            <!-- Navbar Links -->
+            <div class="collapse navbar-collapse" id="navbarContent">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item"><a class="nav-link text-dark" href="/">Home</a></li>
+                    <li class="nav-item"><a class="nav-link text-dark" href="https://medihub-ver1.vercel.app/" target="_blank">Telemedicine</a></li>
+                    <li class="nav-item"><a class="nav-link text-dark" href="https://medihub-chatbot.vercel.app/" target="_blank">Chatbot</a></li>
+                    <li class="nav-item"><a class="nav-link text-dark" href="/BMI calculator/index.html" target="_blank">BMI Buddy</a></li>
+                    <li class="nav-item"><a class="nav-link text-dark" href="/index.html?scrollTo=#map1" >Nearby Hospitals</a></li>
+                    <li class="nav-item"><a class="nav-link text-dark" href="/about_us_page/index.html">About us</a></li>
+                </ul>
+
+                <!-- Language Dropdown -->
+                <div class="dropdown">
+                    <button class="btn btn-light text-primary d-flex align-items-center rounded-pill dropdown-toggle" data-bs-toggle="dropdown">
+                        <i class="fas fa-globe me-2"></i> Language
+                    </button>
+                    
+                    <!-- <button class="btn btn-outline-primary dropdown-toggle" type="button" data-bs-toggle="dropdown">
+                        🌍 Language
+                    </button> -->
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#" onclick="changeLanguage('en')">English</a></li>
+                        <li><a class="dropdown-item" href="#" onclick="changeLanguage('hi')">हिन्दी</a></li>
+                        <li><a class="dropdown-item" href="#" onclick="changeLanguage('mr')">मराठी</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+</header>
+<!-- Google Translate Element -->
+<div id="google_translate_element" style="display: none;"></div>
+
   <div class="container py-4">
     <div class="text-center mb-4">
       <i class="fas fa-heartbeat fs-2 text-secondary"></i>
@@ -189,6 +235,52 @@
     
   </div>
 
+  <footer class="bg-dark text-white py-4">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3">
+                <h5>Quick Links</h5>
+                <ul class="list-unstyled">
+                    <li><a href="/" class="text-white text-decoration-none">Home</a></li>
+                    <li><a class="text-white text-decoration-none" href="https://medihub-ver1.vercel.app/" target="_blank">Telemedicine</a></li>
+                    <li><a class="text-white text-decoration-none" href="https://medihub-chatbot.vercel.app/" target="_blank">Chatbot</a></li>
+                    <li><a class="text-white text-decoration-none"href="\BMI calculator\index.html" target="_blank">BMI Buddy</a></li>
+                    <li><a class="text-white text-decoration-none" href="/index.html?scrollTo=#map1">NearBy Hospital</a></li>
+                    <li><a href="/about_us_page/index.html" class="text-white text-decoration-none">About</a></li>
+                </ul>
+            </div>
+            <div class="col-md-3">
+                <h5>Connect With Us</h5>
+                <div>
+                    <a href="#" class="text-white me-2"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="text-white me-2"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="text-white me-2"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" class="text-white me-2"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <h5>Contact</h5>
+                <ul class="list-unstyled">
+                    <li><i class="fas fa-envelope me-2"></i> contact :-medihub661@gmail.com</li>
+                    <li><i class="fas fa-phone me-2"></i> +91 12345 67891</li>
+                    <li><i class="fas fa-map-marker-alt me-2"></i> 123 Health Street, Medical District</li>
+                </ul>
+            </div>
+            <div class="col-md-3">
+                <h5>Legal</h5>
+                <ul class="list-unstyled">
+                    <li><a href="#" class="text-white text-decoration-none">Privacy Policy</a></li>
+                    <li><a href="#" class="text-white text-decoration-none">Terms of Service</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="text-center mt-3">
+            <p>© 2025 MediHub. All rights reserved.</p>
+        </div>
+    </div>
+</footer>
+
+
   <script>
     window.onload = function() {
       showChart('female'); 
@@ -204,6 +296,7 @@
         chart.src = "/BMI calculator/images/agebmi.png";
       }
     }    
+    let bmicalculated = false;
     function calculateBMI() {
       const height = document.getElementById('height').value;
       const weight = document.getElementById('weight').value;
@@ -224,6 +317,7 @@
       if (height && weight) {
         const bmi = (weight / ((height / 100) ** 2)).toFixed(1);
         bmiValue.innerText = bmi;
+        bmicalculated = true;
 
         // Target recommendation elements
         const dietTip = document.getElementById('diet-tip');
@@ -295,7 +389,7 @@
 
       goalList.innerHTML = ''; // Clear previous points
 
-      if (isNaN(bmi)) {
+      if (!bmicalculated) {
         goalList.innerHTML = "<li class='text-danger'>Please calculate BMI first!</li>";
       } else if (bmi < 18.5) {
         // Underweight Goals
@@ -335,6 +429,101 @@
 
   <!-- Bootstrap JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+
+  <script type="text/javascript">
+    function googleTranslateElementInit() {
+        new google.translate.TranslateElement({ pageLanguage: 'en' }, 'google_translate_element');
+    }
+
+    function changeLanguage(lang) {
+        var select = document.querySelector(".goog-te-combo");
+        if (select) {
+            select.value = lang;
+            select.dispatchEvent(new Event('change'));
+        }
+    }
+</script>
+
+<!-- drop down menu -->
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const navbarToggler = document.getElementById("navbar-toggler");
+        const menuIcon = document.getElementById("menu-icon");
+        const navbarContent = document.getElementById("navbarContent");
+
+        navbarToggler.addEventListener("click", function () {
+            if (navbarContent.classList.contains("show")) {
+                // Close the menu
+                navbarContent.classList.remove("show");
+                menuIcon.classList.remove("fa-times");
+                menuIcon.classList.add("fa-bars");
+            } else {
+                // Open the menu
+                navbarContent.classList.add("show");
+                menuIcon.classList.remove("fa-bars");
+                menuIcon.classList.add("fa-times");
+            }
+        });
+
+        // Close menu when clicking outside (optional for better UX)
+        document.addEventListener("click", function (event) {
+            if (!navbarToggler.contains(event.target) && !navbarContent.contains(event.target)) {
+                navbarContent.classList.remove("show");
+                menuIcon.classList.remove("fa-times");
+                menuIcon.classList.add("fa-bars");
+            }
+        });
+
+        // Remove the Google Translate element if it exists
+        
+    });
+</script>
+
+<!-- translation menu -->
+<script>
+    function correctTranslations() {
+        const translations = {
+            "सुदूर": "टेलीमेडीसीन" // Replace incorrect Hindi translation with the correct one
+        };
+
+        document.querySelectorAll("*").forEach(el => {
+            if (el.childNodes.length === 1 && el.childNodes[0].nodeType === 3) {
+                let text = el.textContent.trim();
+                if (translations[text]) {
+                    el.textContent = translations[text];
+                }
+            }
+        });
+    }
+
+    // Continuously check if Google Translate modifies the page
+    function observeMutations() {
+        const observer = new MutationObserver(() => {
+            correctTranslations();
+        });
+
+        observer.observe(document.body, {
+            childList: true,
+            subtree: true
+        });
+    }
+
+    document.addEventListener("DOMContentLoaded", observeMutations);
+</script>
+
+<script>
+    function scrollToHospitals() {
+        let hospitalSection = document.getElementById("map1");
+        if (hospitalSection) {
+            hospitalSection.scrollIntoView({ behavior: "smooth", block: "start" });
+        } else {
+            console.error("Element with ID 'map-container' not found.");
+        }
+    }
+</script>
+<!-- Google Translate API -->
+<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 </body>
 
 </html>

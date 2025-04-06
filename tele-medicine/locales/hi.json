@@ -1,0 +1,17 @@
+{
+    "home": {
+      "onlineDoctorVisit": "ऑनलाइन डॉक्टर विजिट",
+      "inPersonDoctorVisit": "प्रत्यक्ष डॉक्टर विजिट"
+    },
+    "navbar": {
+      "home": "मुख्य पृष्ठ",
+      "about": "हमारे बारे में",
+      "services": "सेवाएँ",
+      "contact": "संपर्क करें"
+    },
+    "footer": {
+      "copyright": "सभी अधिकार सुरक्षित",
+      "privacyPolicy": "गोपनीयता नीति"
+    }
+  }
+  

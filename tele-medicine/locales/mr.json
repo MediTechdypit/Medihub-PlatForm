@@ -1,0 +1,17 @@
+{
+    "home": {
+      "onlineDoctorVisit": "ऑनलाइन डॉक्टर भेट",
+      "inPersonDoctorVisit": "प्रत्यक्ष डॉक्टर भेट"
+    },
+    "navbar": {
+      "home": "मुख्यपृष्ठ",
+      "about": "आमच्याबद्दल",
+      "services": "सेवा",
+      "contact": "संपर्क"
+    },
+    "footer": {
+      "copyright": "सर्व हक्क राखीव",
+      "privacyPolicy": "गोपनीयता धोरण"
+    }
+  }
+  

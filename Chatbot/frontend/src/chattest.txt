@@ -1,0 +1,52 @@
+// useEffect(() => {
+  //   if (!("webkitSpeechRecognition" in window)) {
+  //     console.warn("Speech recognition not supported in this browser.");
+  //     alert("Your browser does not support speech recognition. Please use Google Chrome.");
+  //     return;
+  //   }
+
+  //   recognitionRef.current = new window.webkitSpeechRecognition();
+  //   recognitionRef.current.lang = "en-US";
+  //   recognitionRef.current.interimResults = false;
+  //   recognitionRef.current.continuous = false;
+
+  //   recognitionRef.current.onstart = () => {
+  //     console.log("🎤 Speech recognition started...");
+  //   };
+
+  //   recognitionRef.current.onresult = (event) => {
+  //     const transcript = event.results[0][0].transcript;
+  //     setInput(transcript);
+  //     console.log("📝 Recognized text:", transcript);
+  //   };
+
+  //   recognitionRef.current.onend = () => {
+  //     console.log("🛑 Speech recognition ended.");
+  //     setIsListening(false);
+  //   };
+
+  //   recognitionRef.current.onerror = (event) => {
+  //     console.error("❌ Speech recognition error:", event.error);
+  //     setIsListening(false);
+      
+  //     let errorMessage = "An unknown error occurred.";
+  //     switch (event.error) {
+  //       case "network":
+  //         errorMessage = "🚨 Network error! Check your internet connection and try again.";
+  //         break;
+  //       case "audio-capture":
+  //         errorMessage = "🎤 No microphone detected. Please check your mic settings.";
+  //         break;
+  //       case "not-allowed":
+  //         errorMessage = "❌ Permission denied. Please allow microphone access.";
+  //         break;
+  //       case "aborted":
+  //         errorMessage = "⚠️ Speech recognition aborted. Try again.";
+  //         break;
+  //       case "no-speech":
+  //         errorMessage = "🔇 No speech detected. Please try speaking again.";
+  //         break;
+  //     }
+  //     alert(errorMessage);
+  //   };
+  // }, []);

@@ -1,9 +1,10 @@
+import Dashboard from '@/components/Dashboard/Dashboard'
 import React from 'react'
 
 export default function page() {
   return (
     <div>
-      <h2>new way </h2>
+      <Dashboard/>
     </div>
   )
 }
