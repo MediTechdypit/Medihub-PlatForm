@@ -35,7 +35,7 @@ tele-medicine/
 ├── package-lock.json    # Locked dependency versions
 ├── postcss.config.mjs   # Tailwind/PostCSS configuration
 ├── tailwind.config.ts   # Tailwind CSS configuration
-├── README.md            # Project documentation
+├── README.md           # Project documentation
 ```
 
 ---
