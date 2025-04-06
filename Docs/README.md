@@ -109,6 +109,7 @@ To tackle these challenges, we have developed a robust AI-powered telemedicine p
   - Recommendations for professional consultation if necessary.
   - AI-driven empathetic conversations for emotional support.
    for more detail visit: **[Chatbot](../Docs/Chatbot/README.md)**
+    for more detail on code : **[Chatbot](../Chatbot/README.md)**
 
 ### **C. Find Nearby Hospitals Process Flow**
 
@@ -124,7 +125,14 @@ To tackle these challenges, we have developed a robust AI-powered telemedicine p
 - It provides Hospital locations marked with pins.
 - Users can click on a hospital marker to get further details and step-by-step directions via Google Maps.
 for more detail visit:**[Navigation](../Docs/Navigation/README.md)**
+
+#### **4. Telemedicine Support (Coming Soon)**
+- A dedicated **Telemedicine** feature is being developed to enable virtual doctor consultations, AI-driven assistance, and mental health support.
+- This module will be available in an upcoming release. We appreciate your patience and look forward to bringing this experience to you soon.
+
+For more detail visit: **[Navigation](../tele-medicine/README.md)**
 ---
+
 
 ## **Conclusion**
 Our telemedicine platform revolutionizes digital healthcare by integrating AI-driven features that enhance accessibility, efficiency, and diagnostic accuracy. The AI-powered doctor assistant, mental health chatbot, and emergency support system create a seamless experience for both patients and doctors. This project aims to bridge the healthcare gap by providing a technology-driven, patient-centric solution for better medical services.
