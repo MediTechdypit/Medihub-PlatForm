@@ -112,7 +112,7 @@ To tackle these challenges, we have developed a robust AI-powered telemedicine p
 ### 📚 Learn More
 
 - 📘 Detailed Feature Documentation: [View Chatbot Docs](../Docs/Chatbot/README.md)  
-- 💻 Source Code & Setup Guide: [View Chatbot Codebase](../Chatbot/README.md)
+- 💻 Source Code & Setup Guide: [View Chatbot Codebase](../Chatbot/Readme.md)
 
 
 ### **C. Find Nearby Hospitals – Process Flow**
