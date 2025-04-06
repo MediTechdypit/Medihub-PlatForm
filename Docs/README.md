@@ -109,6 +109,7 @@ To tackle these challenges, we have developed a robust AI-powered telemedicine p
   - Recommendations for professional consultation if necessary.
   - AI-driven empathetic conversations for emotional support.
    for more detail visit: **[Chatbot](../Docs/Chatbot/README.md)**
+   </br>
     for more detail on code : **[Chatbot](../Chatbot/README.md)**
 
 ### **C. Find Nearby Hospitals Process Flow**
@@ -124,13 +125,14 @@ To tackle these challenges, we have developed a robust AI-powered telemedicine p
 #### **3. Output & Response Generation**
 - It provides Hospital locations marked with pins.
 - Users can click on a hospital marker to get further details and step-by-step directions via Google Maps.
-for more detail visit:**[Navigation](../Docs/Navigation/README.md)**
+ for more detail visit:**[Navigation](../Docs/Navigation/README.md)**
 
 #### **4. Telemedicine Support (Coming Soon)**
 - A dedicated **Telemedicine** feature is being developed to enable virtual doctor consultations, AI-driven assistance, and mental health support.
 - This module will be available in an upcoming release. We appreciate your patience and look forward to bringing this experience to you soon.
-
-For more detail visit: **[Navigation](../tele-medicine/README.md)**
+</br> 
+ for more detail visit: **[Telemedicine](../tele-medicine/README.md)**
+ 
 ---
 
 
