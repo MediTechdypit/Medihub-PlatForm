@@ -104,35 +104,44 @@ To tackle these challenges, we have developed a robust AI-powered telemedicine p
 ![Screenshot 2025-04-05 100542 - Copy](https://github.com/user-attachments/assets/48cf7d63-6e86-4127-9967-0364fe79e924)
 
 #### **3. Output & Response Generation**
-- The chatbot provides a response based on the condition:
-  - Mental health advice and coping mechanisms.
-  - Recommendations for professional consultation if necessary.
-  - AI-driven empathetic conversations for emotional support.
-  -for more detail visit: **[Chatbot](../Docs/Chatbot/README.md)**
-  -for more detail on code : **[Chatbot](../Chatbot/README.md)**
 
-### **C. Find Nearby Hospitals Process Flow**
+- **🧠 Mental Health Advice:** Provides practical coping mechanisms and advice for common mental health challenges.
+- **👨‍⚕️ Professional Consultation Recommendations:** Suggests seeking help from mental health professionals when necessary.
+- **💬 Empathetic AI Conversations:** Engages users with emotionally supportive and empathetic dialogue to ensure they feel heard and understood.
 
-#### **1. Accessing the Location of Nearby Hospitals:**
-- :
-  - Users can choose "Use My Location" to enable or allow to access  location .
-  - Once granted, the app fetches the latitude and longitude to search for nearby hospitals within a specified radius.
-  - Hospital data is retrieved and displayed on an interactive map with markers indicating.
+### 📚 Learn More
 
-![Screenshot 2025-04-04 152833](https://github.com/user-attachments/assets/5c8881d3-0dcb-4870-a5a1-7a03d82d5d24)
+- 📘 Detailed Feature Documentation: [View Chatbot Docs](../Docs/Chatbot/README.md)  
+- 💻 Source Code & Setup Guide: [View Chatbot Codebase](../Chatbot/README.md)
 
-#### **3. Output & Response Generation**
-- It provides Hospital locations marked with pins.
-- Users can click on a hospital marker to get further details and step-by-step directions via Google Maps.
- for more detail visit:**[Navigation](../Docs/Navigation/README.md)**
 
-#### **4. Telemedicine Support (Coming Soon)**
-- A dedicated **Telemedicine** feature is being developed to enable virtual doctor consultations, AI-driven assistance, and mental health support.
-- This module will be available in an upcoming release. We appreciate your patience and look forward to bringing this experience to you soon.
- for more detail And Basic code visit:**[Telemedicine](../tele-medicine/README.md)**
+### **C. Find Nearby Hospitals – Process Flow**
+
+#### **1. Accessing Nearby Hospital Locations**
+- Users can choose the **"Use My Location"** option to allow location access.
+- Upon permission, the app fetches the user's **latitude and longitude** to search for hospitals within a specified radius.
+- Hospital data is retrieved and displayed on an **interactive map** with markers for each hospital location.
+
+![Hospital Map Screenshot](https://github.com/user-attachments/assets/5c8881d3-0dcb-4870-a5a1-7a03d82d5d24)
+
+#### **2. Output & Response Generation**
+- Displays hospital locations as **map pins**.
+- Users can **click on a hospital marker** to view more details and receive **step-by-step directions** via Google Maps.
+
+📘 For more details, visit the [Navigation Documentation](../Docs/Navigation/README.md)
 
 ---
 
+### **D. Telemedicine Support (Coming Soon)**
+- A **dedicated Telemedicine module** is currently under development.
+- This feature will enable:
+  - **Virtual doctor consultations**
+  - **AI-powered medical assistance**
+  - **Mental health support**
+
+🚧 We’re working hard to bring this feature to you. Stay tuned for updates!
+
+🧾 For more details and basic implementation code, check out the [Telemedicine Module](../tele-medicine/README.md)
 
 ## **Conclusion**
 Our telemedicine platform revolutionizes digital healthcare by integrating AI-driven features that enhance accessibility, efficiency, and diagnostic accuracy. The AI-powered doctor assistant, mental health chatbot, and emergency support system create a seamless experience for both patients and doctors. This project aims to bridge the healthcare gap by providing a technology-driven, patient-centric solution for better medical services.
