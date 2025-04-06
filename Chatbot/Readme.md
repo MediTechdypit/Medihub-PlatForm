@@ -102,9 +102,6 @@ npm start
 - RESTful API with Node.js & Express
 - Environment-based configuration
 
-## 📄 License
-
-This project is licensed under the MIT License.
 
 ---
 
