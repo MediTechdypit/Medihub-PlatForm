@@ -11,34 +11,40 @@ An AI-powered mental health and telemedicine web application designed to improve
 
 ---
 
+Absolutely! Here's a **cleaner, well-formatted, and more professional version** of your 📁 **Project Structure Overview** section — great for documentation, stakeholders, or internal dev onboarding.
+
+---
+
 ## 📁 Project Structure Overview
 
-```
+```bash
 tele-medicine/
 │
-├── app/                 # Next.js App Router structure
-├── components/          # UI components (shadcn/ui, custom React components)
-├── lib/                 # Utility functions and services
-├── locales/             # Internationalization (i18n) support
-├── node_modules/        # Installed dependencies
-├── prisma/              # Prisma ORM schema and migrations
-├── public/              # Static assets
-├── types/               # Global TypeScript type definitions
+├── app/                  # Next.js App Router - pages and routing logic
+├── components/           # Reusable UI components (shadcn/ui & custom)
+├── lib/                  # Helper functions, services, and API integrations
+├── locales/              # Language files for internationalization (i18n)
+├── node_modules/         # Project dependencies
+├── prisma/               # Prisma schema, migrations, and database logic
+├── public/               # Static assets (images, icons, etc.)
+├── types/                # Global TypeScript type definitions
 │
-├── .env                 # Environment variables (local)
-├── .gitignore           # Git ignore rules
-├── components.json      # shadcn/ui tracking file
-├── eslint.config.mjs    # ESLint configuration
-├── next.config.ts       # Next.js configuration
-├── next-env.d.ts        # TypeScript environment definitions
-├── package.json         # Project metadata and scripts
-├── package-lock.json    # Locked dependency versions
-├── postcss.config.mjs   # Tailwind/PostCSS configuration
-├── tailwind.config.ts   # Tailwind CSS configuration
-├── README.md           # Project documentation
+├── .env                  # Environment variables (local setup)
+├── .gitignore            # Files and folders to ignore in Git
+├── components.json       # Tracks used components from shadcn/ui
+├── eslint.config.mjs     # ESLint configuration for code quality
+├── next.config.ts        # Configuration for Next.js behavior
+├── next-env.d.ts         # TypeScript environment support for Next.js
+├── package.json          # Project metadata, scripts, and dependencies
+├── package-lock.json     # Auto-generated lock file for exact dependencies
+├── postcss.config.mjs    # Tailwind CSS and PostCSS configuration
+├── tailwind.config.ts    # Tailwind theme, plugins, and custom setup
+├── README.md             # Main project documentation
 ```
 
 ---
+
+
 
 ## ⚙️ Environment Configuration (`.env`)
 
