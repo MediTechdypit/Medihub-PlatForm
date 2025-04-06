@@ -92,9 +92,9 @@ To tackle these challenges, we have developed a robust AI-powered telemedicine p
 
 #### **1. User Input Handling**
 - The chatbot accepts:
-  - **Text Input: Type a message in the text box.
-  - **Emoji Input: Select an emoji from the emoji picker.
-  - **Voice Input: Click on the microphone icon to speak.
+  - **Text Input**: Type a message in the text box.
+  - **Emoji Input**: Select an emoji from the emoji picker.
+  - **Voice Input**: Click on the microphone icon to speak.
 
  
 #### **2. AI Analysis & Fine-Tuning**
@@ -108,8 +108,8 @@ To tackle these challenges, we have developed a robust AI-powered telemedicine p
   - Mental health advice and coping mechanisms.
   - Recommendations for professional consultation if necessary.
   - AI-driven empathetic conversations for emotional support.
-   for more detail visit: **[Chatbot](../Docs/Chatbot/README.md)**
-    for more detail on code : **[Chatbot](../Chatbot/README.md)**
+  -for more detail visit: **[Chatbot](../Docs/Chatbot/README.md)**
+  -for more detail on code : **[Chatbot](../Chatbot/README.md)**
 
 ### **C. Find Nearby Hospitals Process Flow**
 
@@ -129,7 +129,7 @@ To tackle these challenges, we have developed a robust AI-powered telemedicine p
 #### **4. Telemedicine Support (Coming Soon)**
 - A dedicated **Telemedicine** feature is being developed to enable virtual doctor consultations, AI-driven assistance, and mental health support.
 - This module will be available in an upcoming release. We appreciate your patience and look forward to bringing this experience to you soon.
- for more detail visit:**[Telemedicine](../tele-medicine/README.md)**
+ for more detail And Basic code visit:**[Telemedicine](../tele-medicine/README.md)**
 
 ---
 
